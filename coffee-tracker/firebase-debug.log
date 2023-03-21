@@ -1,0 +1,47 @@
+[debug] [2023-03-21T16:01:25.087Z] ----------------------------------------------------------------------
+[debug] [2023-03-21T16:01:25.088Z] Command:       /Users/juansalazar/.nvm/versions/node/v18.12.1/bin/node /Users/juansalazar/.nvm/versions/node/v18.12.1/bin/firebase init
+[debug] [2023-03-21T16:01:25.088Z] CLI Version:   11.24.1
+[debug] [2023-03-21T16:01:25.088Z] Platform:      darwin
+[debug] [2023-03-21T16:01:25.088Z] Node Version:  v18.12.1
+[debug] [2023-03-21T16:01:25.089Z] Time:          Tue Mar 21 2023 10:01:25 GMT-0600 (Central Standard Time)
+[debug] [2023-03-21T16:01:25.089Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-21T16:01:25.090Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-03-21T16:01:25.111Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-21T16:01:25.111Z] > authorizing via signed-in user (juanjose@kodda.mx)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/juansalazar/Documents/Tecnológico de Monterrey/SemanaTec01/Tec_Week_IoT/coffee-tracker
+
+[debug] [2023-03-21T16:01:25.306Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-03-21T16:01:25.307Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-03-21T16:03:48.742Z] > refreshing access token with scopes: []
+[debug] [2023-03-21T16:03:48.744Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-21T16:03:48.745Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-21T16:03:48.981Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-03-21T16:03:48.981Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-21T16:03:48.996Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-03-21T16:03:48.996Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"coffe-tracker","name":"Coffe Tracker"}
+[debug] [2023-03-21T16:03:50.399Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-03-21T16:03:50.399Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-03-21T16:03:50.574Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/Users/juansalazar/.nvm/versions/node/v18.12.1/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/juansalazar/.nvm/versions/node/v18.12.1/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID coffe-tracker. Please try again with a unique project ID.

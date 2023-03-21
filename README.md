@@ -35,3 +35,11 @@ La app servirá para:
 - La temperatura promedio del cafe que toma
 - Además de que en la app se podrán mostrar recomendaciones para un consumo mucho más saludable.
 - Saber las rutinas o habitos que tiene el usuario a lo largo del día en cuanto al consumo de cafe.
+
+## Link
+
+[https://xd.adobe.com/view/29e6d897-b0a4-4535-8bab-cc01199a60ea-7cb5/](https://xd.adobe.com/view/29e6d897-b0a4-4535-8bab-cc01199a60ea-7cb5/)
+
+## Dashbard
+
+![Untitled](Tec%20Week%20IoT%20adaa6be7aaf949caa0bf1036a303f9a7/Untitled.png)

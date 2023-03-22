@@ -47,7 +47,7 @@ function Dashboard() {
                 <p id="cupSize">500ml</p>
             </article>
             <article className="section door">
-                <p>Puerta Abierta</p>
+                <p>Cafés de hoy</p>
                 <p id="doorNumber">10</p>
             </article>
         </section>

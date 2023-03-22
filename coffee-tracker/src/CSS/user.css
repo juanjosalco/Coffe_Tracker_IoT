@@ -81,19 +81,19 @@
 
 .sleep{
     grid-area: d;
-    background-color: #4691a6;
+    background-color: #5eb8be;
 }
 
 .sleep section{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: left;
 }
 
 .sleep section p{
     margin-left: 8rem;
     font-size: 3rem;
-    font-weight: 900;
+    font-weight: lighter;
     color: #ffffff;
 }
 

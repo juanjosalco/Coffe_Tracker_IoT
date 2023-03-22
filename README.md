@@ -42,4 +42,4 @@ La app servirá para:
 
 ## Dashbard
 
-![Untitled](Tec%20Week%20IoT%20adaa6be7aaf949caa0bf1036a303f9a7/Untitled.png)
+<img width="1725" alt="CleanShot 2023-03-22 at 07 25 15@2x" src="https://user-images.githubusercontent.com/63627214/226918408-292c5f76-118f-463a-a73e-c8bd7bdf79c5.png">

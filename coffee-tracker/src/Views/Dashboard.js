@@ -11,7 +11,7 @@ function Dashboard() {
     <section className="user-side">
         <section className="information-part">
             <section className="top-part">
-                <p><span></span>Hola Javier, siempre es un gusto!</p>
+                <p><span></span>Hola Moises, siempre es un gusto!</p>
                 <div className="circulo">
                     <Link to={'/'}><img src={reloj} alt="Nolberto Foto"/></Link>
                 </div>

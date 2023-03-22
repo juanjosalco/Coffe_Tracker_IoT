@@ -144,10 +144,16 @@
     grid-area: a;
 }
 
-.sensores{
-    display: grid;
-    row-gap: 2rem;
-    place-self: center;
+.temperatura{
+    height: 200px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2334d8;
+    border-radius: 100%;
+    color: white;
+    font-size: 5rem;
 }
 
 .sensores p{

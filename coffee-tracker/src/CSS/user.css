@@ -171,3 +171,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#consejo{
+    place-items: start;
+}

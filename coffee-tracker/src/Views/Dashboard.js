@@ -20,7 +20,7 @@ function Dashboard() {
                 <p>Salida de Casa</p>
                 <img src= {graphic} alt="grafico"/>
             </article>
-            <article className="section sleep">
+            <article className="section sleep" id="consejo">
                 <p>Horas de Sueño</p>
                 <section>
                     <img src= {night} alt="icono noche"/>

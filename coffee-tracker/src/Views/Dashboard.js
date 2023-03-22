@@ -23,15 +23,13 @@ function Dashboard() {
             <article className="section sleep" id="consejo">
                 <p>Consejo del día</p>
                 <section>
-                    <p>Praesentium recusandae molestiae sed enim harum odit quisquam mollitia ab assumenda. aut exercitationem</p>
+                    <p>Earum rem voluptas ut repellat tempore debitis voluptatem qui quo quae esse eos rerum dicta officia. Molestiae architecto enim vel quo eligendi illo dolores dolorem dolorem est dolor ducimus est esse. Repudiandae debitis et rerum animi recusandae facilis tempore quisquam voluptatum tempora.</p>
                 </section>
             </article>
             <article className="section sensor">
-                <p>Sensores</p>
-                <section className="sensores">
-                    <p><span></span>Cafetera</p>
-                    <p><span></span>Puerta</p>
-                    <p><span></span>Ventana</p>
+                <p>Temperatura</p>
+                <section className="temperatura">
+                    <p>22°</p>
                 </section>
             </article>
             <article className="section coffee">

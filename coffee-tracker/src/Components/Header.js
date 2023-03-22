@@ -1,5 +1,6 @@
 import '../CSS/header.css';
 import logo from "../Assets/logo.svg"
+import {Link} from "react-router-dom";
 
 function Header() {
   return (
@@ -10,8 +11,8 @@ function Header() {
                 <li>Inicio</li>
                 <li>¿Quiénes Somos?</li>
                 <li>Planes</li>
-                <a id="logIn" href="../HTML/login.html">LogIn</a>
-                <a id="signUp" href="../HTML/login.html">SignUp</a>
+                <Link to={'/identify'} id="logIn">LogIn</Link>
+                <Link to={'/identify'} id="signUp">SignUp</Link>
             </ul>
         </nav>
     </header>

@@ -28,11 +28,9 @@ function Dashboard() {
                 </section>
             </article>
             <article className="section sensor">
-                <p>Sensores</p>
-                <section className="sensores">
-                    <p><span></span>Cafetera</p>
-                    <p><span></span>Puerta</p>
-                    <p><span></span>Ventana</p>
+                <p>Temperatura</p>
+                <section className="temperatura">
+                    <h3>20°</h3>
                 </section>
             </article>
             <article className="section coffee">

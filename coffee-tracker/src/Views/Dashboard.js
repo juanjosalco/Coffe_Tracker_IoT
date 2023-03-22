@@ -23,7 +23,7 @@ function Dashboard() {
             <article className="section sleep">
                 <p>Consejo del día</p>
                 <section>
-                    <p>6.5</p>
+                    <p>Praesentium recusandae molestiae sed enim harum odit quisquam mollitia ab assumenda. aut exercitationem</p>
                 </section>
             </article>
             <article className="section sensor">

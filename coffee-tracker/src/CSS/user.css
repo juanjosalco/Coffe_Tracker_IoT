@@ -81,7 +81,7 @@
 
 .sleep{
     grid-area: d;
-    background-color: var(--clear-night);
+    background-color: #4691a6;
 }
 
 .sleep section{
@@ -92,9 +92,9 @@
 
 .sleep section p{
     margin-left: 8rem;
-    font-size: 15rem;
+    font-size: 7rem;
     font-weight: 900;
-    color: #14162a;
+    color: #ffffff;
 }
 
 .horas{

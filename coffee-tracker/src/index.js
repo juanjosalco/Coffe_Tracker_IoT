@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes} from "react-router-dom";
 import './index.css';
 import Home from './Views/Home'
 import Identify from "./Views/Identify"
-import Dashboard from './Components/Dashboard';
+import Dashboard from './Views/Dashboard';
 
 import reportWebVitals from './reportWebVitals';
 import './CSS/index.css';

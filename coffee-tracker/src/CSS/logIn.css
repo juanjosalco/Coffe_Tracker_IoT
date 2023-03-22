@@ -1,4 +1,8 @@
-body > img{
+#container{
+    width: 100vw;
+}
+
+#container > img{
     display: flex;
     width: 45vw;
     position: absolute;

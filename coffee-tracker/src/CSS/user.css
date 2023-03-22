@@ -81,7 +81,8 @@
 
 .sleep{
     grid-area: d;
-    background-color: #5eb8be;
+    background-color: #59c9d1;
+    color: white;
 }
 
 .sleep section{
@@ -93,7 +94,7 @@
 .sleep section p{
     margin-left: 8rem;
     font-size: 3rem;
-    font-weight: lighter;
+    font-weight: 300;
     color: #ffffff;
 }
 

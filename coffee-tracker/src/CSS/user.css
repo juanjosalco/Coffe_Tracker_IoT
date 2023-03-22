@@ -100,7 +100,7 @@
 .horas{
     grid-area: b;
     justify-content: center;
-    background-color: var(--beishe);
+    background-color: #3b9dc4;
 }
 
 .coffee{

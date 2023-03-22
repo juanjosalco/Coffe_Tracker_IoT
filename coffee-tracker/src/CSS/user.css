@@ -81,20 +81,20 @@
 
 .sleep{
     grid-area: d;
-    background-color: var(--clear-night);
+    background-color: #5eb8be;
 }
 
 .sleep section{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: left;
 }
 
 .sleep section p{
     margin-left: 8rem;
-    font-size: 15rem;
-    font-weight: 900;
-    color: #14162a;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #ffffff;
 }
 
 .horas{
@@ -137,23 +137,17 @@
     grid-area: e;
     place-items: center;
     color: white;
-    background-color: #700d7d;
+    background-color: #5a054f;
 }
 
 .sensor{
     grid-area: a;
 }
 
-.temperatura{
-    height: 200px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2334d8;
-    border-radius: 100%;
-    color: white;
-    font-size: 5rem;
+.sensores{
+    display: grid;
+    row-gap: 2rem;
+    place-self: center;
 }
 
 .sensores p{

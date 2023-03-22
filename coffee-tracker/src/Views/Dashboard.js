@@ -23,14 +23,15 @@ function Dashboard() {
             <article className="section sleep" id="consejo">
                 <p>Horas de Sueño</p>
                 <section>
-                    <img src= {night} alt="icono noche"/>
-                    <p>6.5</p>
+                    <p>Praesentium recusandae molestiae sed enim harum odit quisquam mollitia ab assumenda. aut exercitationem</p>
                 </section>
             </article>
             <article className="section sensor">
-                <p>Temperatura</p>
-                <section className="temperatura">
-                    <h3>20°</h3>
+                <p>Sensores</p>
+                <section className="sensores">
+                    <p><span></span>Cafetera</p>
+                    <p><span></span>Puerta</p>
+                    <p><span></span>Ventana</p>
                 </section>
             </article>
             <article className="section coffee">

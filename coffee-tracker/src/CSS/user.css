@@ -100,7 +100,7 @@
 .horas{
     grid-area: b;
     justify-content: center;
-    background-color: #3b9dc4;
+    background-color: var(--beishe);
 }
 
 .coffee{
@@ -137,23 +137,17 @@
     grid-area: e;
     place-items: center;
     color: white;
-    background-color: #700d7d;
+    background-color: #5a054f;
 }
 
 .sensor{
     grid-area: a;
 }
 
-.temperatura{
-    height: 200px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2334d8;
-    border-radius: 100%;
-    color: white;
-    font-size: 5rem;
+.sensores{
+    display: grid;
+    row-gap: 2rem;
+    place-self: center;
 }
 
 .sensores p{

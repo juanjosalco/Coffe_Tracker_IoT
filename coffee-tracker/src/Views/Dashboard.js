@@ -20,8 +20,8 @@ function Dashboard() {
                 <p>Salida de Casa</p>
                 <img src= {graphic} alt="grafico"/>
             </article>
-            <article className="section sleep">
-                <p>Consejo del día</p>
+            <article className="section sleep" id="consejo">
+                <p>Horas de Sueño</p>
                 <section>
                     <p>Praesentium recusandae molestiae sed enim harum odit quisquam mollitia ab assumenda. aut exercitationem</p>
                 </section>

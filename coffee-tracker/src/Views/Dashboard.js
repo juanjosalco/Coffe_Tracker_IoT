@@ -21,7 +21,7 @@ function Dashboard() {
                 <img src= {graphic} alt="grafico"/>
             </article>
             <article className="section sleep" id="consejo">
-                <p>Horas de Sueño</p>
+                <p>Consejo del día</p>
                 <section>
                     <p>Praesentium recusandae molestiae sed enim harum odit quisquam mollitia ab assumenda. aut exercitationem</p>
                 </section>

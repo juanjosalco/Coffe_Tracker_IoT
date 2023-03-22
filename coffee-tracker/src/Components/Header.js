@@ -1,9 +1,10 @@
 import '../CSS/header.css';
+import logo from "../Assets/logo.svg"
 
 function Header() {
   return (
     <header>
-        <img src="../Assets/logo.svg" alt="Logo"/>
+        <img src= {logo} alt="Logo"/>
         <nav>
             <ul>
                 <li>Inicio</li>

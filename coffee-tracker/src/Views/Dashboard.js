@@ -17,7 +17,7 @@ function Dashboard() {
                 </div>
             </section>
             <article className="section horas">
-                <p>Salida de Casa</p>
+                <p id="consumo">Consumo diario</p>
                 <img src= {graphic} alt="grafico"/>
             </article>
             <article className="section sleep" id="consejo">

@@ -35,7 +35,7 @@ function Dashboard() {
             <article className="section coffee">
                 <p>Consumo Semanal</p>
                 <section>
-                    <p>6.5</p>
+                    <p>3L</p>
                     <img src= {cafe} alt="icono noche"/>
                 </section>
             </article>

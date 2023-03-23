@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 function Identify() {
   return (
     <section id="container">
-        <img src = {LogImage} alt="3D image"/>
+        <img src = {LogImage} alt="3D"/>
         <section className="LogIn">
             <Link to={'/'}><img src={Logo} alt="logo SUFEE"/></Link>
             <section>

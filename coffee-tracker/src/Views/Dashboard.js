@@ -1,6 +1,5 @@
 import reloj from "../Assets/taza inicio.png"
 import graphic from "../Assets/grafic.png"
-import night from "../Assets/night.svg"
 import cafe from "../Assets/cafe.png"
 import "../CSS/user.css"
 import {Link} from "react-router-dom";

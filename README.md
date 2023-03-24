@@ -2,9 +2,9 @@
 
 **Objetivo: Durante esta semana nos dedicaremos al diseño de un dispositivo IoT, el ayudará a que la vida de las personas sea más sencillas, algunos de los sensores que utilizaremos son:**
 
-- Sensor de Presencia (Pip)
+- Sensor de Luminicidad (LDR)
     
-    Lo utilizaremos para saber si la persona esta en la misma habitación del dispositivo para que pueda empezar su funcionamiento.
+    Lo utilizaremos para saber si es de dia o de noche y poder registrar en la base de datos la frecuencia y tendencia de las personas
     
 - Sencor de distancia (Ultrasonico)
     
@@ -17,9 +17,9 @@
 
 Algunos de los actuadores que utilizaremos en el proyecto serán:
 
-- LED’s
+- LED
     
-    Estas mostrán la temperatura de la bebida
+    Estas mostrára visualmente cuando la bebida esta lista
     
 - Servo motor
     

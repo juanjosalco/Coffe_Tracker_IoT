@@ -28,7 +28,7 @@ function Dashboard() {
     const [luz, setLuz] = useState(null);
     const [ultrasonico, setUltrasonico] = useState(null);
 
-    let promedio = 24;
+    let promedio = 30;
 
     useEffect(() => {
     database.ref('/Temperatura').on('value', snapshot => {
@@ -55,9 +55,8 @@ function Dashboard() {
                     <Link to={'/'}><img src={reloj} alt="Nolberto Foto"/></Link>
                 </div>
             </section>
-            <article className="section horas">
-                <p id="consumo">Consumo diario</p>
-                <img src= {graphic} alt="grafico"/>
+            <article className={"section horas " + (luz > promedio ? "day" : "night")}>
+                <p id="consumo">{luz > promedio ? "Buenos días" : "Buenas noches"}</p>
             </article>
             <article className="section sleep" id="consejo">
                 <p>Consejo del día</p>

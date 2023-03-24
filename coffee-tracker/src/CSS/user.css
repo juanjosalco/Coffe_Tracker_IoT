@@ -101,7 +101,15 @@
 
 .horas{
     grid-area: b;
-    background-color: var(--beishe);
+    color: white;
+}
+
+.day{
+    background-color: #5faef9;
+}
+
+.night{
+    background-color: #0d1116;
 }
 
 .coffee{

@@ -3,9 +3,43 @@ import graphic from "../Assets/grafic.png"
 import cafe from "../Assets/cafe.png"
 import "../CSS/user.css"
 import {Link} from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/database';
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCwW0QqNpjvaxDyxoyflvEr3LOI2HijTgo",
+    authDomain: "tec-week-iot.firebaseapp.com",
+    databaseURL: "https://tec-week-iot-default-rtdb.firebaseio.com",
+    projectId: "tec-week-iot",
+    storageBucket: "tec-week-iot.appspot.com",
+    messagingSenderId: "382023793289",
+    appId: "1:382023793289:web:0aa51482d20468c767a458",
+    measurementId: "G-7C2K0B0XG8"
+};
+
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
 
 function Dashboard() {
+
+    const [data, setData] = useState(null);
+    const [luz, setLuz] = useState(null);
+
+    let promedio = 24;
+
+    useEffect(() => {
+    database.ref('/Temperatura').on('value', snapshot => {
+      setData(snapshot.val());
+    });
+    }, []);
+    useEffect(() => {
+    database.ref('/LDR').on('value', snapshot => {
+      setLuz(snapshot.val());
+    });
+    }, []);
+
   return (
     <section className="user-side">
         <section className="information-part">
@@ -28,7 +62,7 @@ function Dashboard() {
             <article className="section sensor">
                 <p>Temperatura</p>
                 <section className="temperatura">
-                    <p>22°</p>
+                    <p>{data + "°"}</p>
                 </section>
             </article>
             <article className="section coffee">
@@ -38,9 +72,8 @@ function Dashboard() {
                     <img src= {cafe} alt="icono noche"/>
                 </section>
             </article>
-            <article className="section cup">
-                <p>Vaso de Café</p>
-                <p id="cupSize">500ml</p>
+            <article className={"section cup " + (luz > promedio ? "day" : "night")}>
+                <p>{luz > promedio ? "Buenas Dias" : "Buenas Noches"}</p>
             </article>
             <article className="section door">
                 <p>Cafés de hoy</p>

@@ -127,10 +127,17 @@
     grid-area: f;
     place-items: center;
     color: white;
+}
+
+.day{
     background-color: #5faef9;
 }
 
-#cupSize, #doorNumber{
+.night{
+    background-color: #0d1116;
+}
+
+#doorNumber{
     font-size: 4rem;
 }
 

@@ -26,6 +26,7 @@ function Dashboard() {
 
     const [data, setData] = useState(null);
     const [luz, setLuz] = useState(null);
+    const [ultrasonico, setUltrasonico] = useState(null);
 
     let promedio = 24;
 
@@ -37,6 +38,11 @@ function Dashboard() {
     useEffect(() => {
     database.ref('/LDR').on('value', snapshot => {
       setLuz(snapshot.val());
+    });
+    }, []);
+    useEffect(() => {
+    database.ref('/Llenado').on('value', snapshot => {
+      setUltrasonico(snapshot.val());
     });
     }, []);
 
@@ -72,8 +78,9 @@ function Dashboard() {
                     <img src= {cafe} alt="icono noche"/>
                 </section>
             </article>
-            <article className={"section cup " + (luz > promedio ? "day" : "night")}>
-                <p>{luz > promedio ? "Buenas Dias" : "Buenas Noches"}</p>
+            <article className="section cup ">
+                <p>Vaso de Café</p>
+                <p id="cupSize">{(100 - ultrasonico) * 10} ml</p>
             </article>
             <article className="section door">
                 <p>Cafés de hoy</p>
